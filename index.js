@@ -20,7 +20,7 @@ const app = express()
 
 //cors use in server app
 app.use(cors({
-    origin:"http//localhost:4200"
+    origin:"http//localhost:4200/"
 }))
 
 //parse JSON data
