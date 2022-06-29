@@ -1,0 +1,23 @@
+//db connection
+
+//import mongoose
+const mongoose = require('mongoose')
+
+//connection string
+mongoose.connect('mongodb://localhost:27017/bankApp',{
+    useNewUrlParser:true
+})
+
+//model definition
+const User = mongoose.model('User',{
+    acno: Number,
+    username: String,
+    password: Number,
+    balance: Number,
+    transaction: []
+})
+
+module.exports={
+    User
+
+}   
